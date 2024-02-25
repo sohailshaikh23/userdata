@@ -1,6 +1,5 @@
-#!/bin/bash
-# THIS JENKINS USERDATA IS FOR UBUNTU 
-
+#!/bin/bash 
+# This jenkins userdata is for UBUNTU
 
 
 #install java
