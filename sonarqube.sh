@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#This bash script is for UBUNTU
+
 cp /etc/sysctl.conf /root/sysctl.conf_backup
 cat <<EOT> /etc/sysctl.conf
 vm.max_map_count=262144
@@ -114,7 +117,7 @@ systemctl enable nginx.service
 #systemctl restart nginx.service
 sudo ufw allow 80,9000,9001/tcp
 
-# sonarqube port is 
+# sonarqube running on 9000
 
 echo "System reboot in 30 sec"
 sleep 30
