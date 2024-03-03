@@ -21,3 +21,4 @@ if [ -d "/var/opt/sonar-scanner-4.7.0.2747-linux" ];then
     sudo rm -rf /var/opt/sonar-scanner-4.7.0.2747-linux
 fi
 sudo mv sonar-scanner-4.7.0.2747-linux /var/opt
+PATH=$PATH:/var/opt/sonar-scanner-4.7.0.2747-linux/bin/
