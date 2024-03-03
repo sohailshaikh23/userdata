@@ -21,4 +21,12 @@ if [ -d "/var/opt/sonar-scanner-4.7.0.2747-linux" ];then
     sudo rm -rf /var/opt/sonar-scanner-4.7.0.2747-linux
 fi
 sudo mv sonar-scanner-4.7.0.2747-linux /var/opt
-PATH=$PATH:/var/opt/sonar-scanner-4.7.0.2747-linux/bin/
+
+
+# Add sonar-scanner to PATH in ~/.bashrc
+echo 'export PATH="/var/opt/sonar-scanner-4.7.0.2747-linux/bin:$PATH"' >> ~/.bashrc
+
+# Apply changes to the current terminal session
+source ~/.bashrc
+
+echo "sonar-scanner has been added to your PATH."
