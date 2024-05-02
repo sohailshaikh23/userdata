@@ -25,4 +25,4 @@ sudo mv sonar-scanner-4.7.0.2747-linux /var/opt
 ######################## MANUAL STEPS###############################################
 #1 nano ~/.bashrc
 #2 export PATH=$PATH:/var/opt/sonar-scanner-4.7.0.2747-linux/bin/
-#3 Source ~/.bashrc
+#3 source ~/.bashrc
