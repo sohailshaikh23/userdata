@@ -1,11 +1,9 @@
 #!/bin/bash 
 # This jenkins userdata is for UBUNTU
 
-
 #install java
 sudo apt update -y
 sudo apt install fontconfig openjdk-17-jre -y
-
 
 ############################################
 #Install jenkins
@@ -17,9 +15,7 @@ echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
 sudo apt-get update -y
 sudo apt-get install jenkins -y
 
-
 ############################################
-
 
 sudo systemctl enable --now jenkins
 
